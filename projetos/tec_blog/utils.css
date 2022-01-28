@@ -1,0 +1,68 @@
+/* Formatando a estrutura do site: */
+
+*{ margin: 0px; }
+
+#principal{ border: solid blue;
+            margin: auto 200px;
+            }
+
+h2{ font-size: 2.9em;
+    color: #201501;   }
+
+h1{ color: #FBA608;
+    }
+
+a{ text-decoration: none;
+   font-size: 1.2em;
+   color: #FBA608;
+   }
+
+body{ background: #E7E7E7; }
+
+/* Formatando a estrutura do logo do site: */
+
+#logo{
+       background: #FBA608;
+       height: 100px;
+       text-align: center;
+       padding: 30px;}
+
+.menu{ padding: 20px;
+       margin: 10px; }
+
+.link_logo{ font-weight: bold;
+            margin: 10px;}
+
+/* Formatando o conteúdo do site: */
+
+.postagem{ border: solid red;
+           width: 900px;
+           padding: 15px;
+           background: white;
+           margin: 10px;
+           }
+
+.imagem{ border: outset brown 6px;
+         width: 640px;
+         height: 425px;
+         text-align: center;
+         margin: 30px;   }
+
+.noticia{ border: solid blue;
+          width: 400px;
+          height: 250px;
+          margin-right: 50px;
+          margin-top: 10px;
+          background: white;
+          float: right;  }
+
+.clear{ clear: both; }
+/* Formatando os links do site */
+
+.link_logo:link{ color: white; }
+
+.link_logo:hover{ color: #FBA608;
+                  background: white;
+                  padding: 10px;  }
+
+.link_site:hover{ text-decoration: underline; }

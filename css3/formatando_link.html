@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatando links</title>
+    <style type="text/css">
+        /* Deixando o link sem o underline */
+        a{
+            text-decoration: none;}
+
+        /* Formatando o link após ser acessado */
+        a:visited{ text-decoration: overline;
+                    color: red;}
+
+        a:active{ color: black; }
+
+        /* Formatando o link quando passar o cursor sobre */
+        a:hover{ text-decoration: underline;
+                 color: blue;   }
+
+        /* Link não visitados */
+        a:link{ color: green; }
+    </style>
+</head>
+<body>
+<div>
+    <a href="https://www.google.com.br">Ver mais</a>
+</div>
+</body>
+</html>

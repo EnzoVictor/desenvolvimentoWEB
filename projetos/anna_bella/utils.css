@@ -1,0 +1,44 @@
+/* Formatando a estrutura do site */
+body{ background-image: url('fundoAnnaBella.png'); }
+
+a{ text-decoration: none;
+    }
+
+p{ text-align: left;
+   padding: 10px; }
+
+/* Formatando as DIVs do site */
+#estrutura{
+            margin: auto 495px;
+            text-align: center;}
+
+.menu{ background: #b8aa94;
+       padding: 25px;
+       }
+
+.rodape{ padding: 50px;
+         font-weight: bold;   }
+
+.conteudo{ background: #E2E2D5; }
+
+.titulo_conteudo{ font-size: 18px;
+                  color: #47673C;
+                  font-weight: bold;
+                  padding: 15px;
+                  text-align: left;}
+
+.imagem{ border-color: #b8aa94;
+         border-width: 10px;
+         border-style: outset;
+         margin-left: 122px;
+         margin-right: 110px;
+            }
+
+.contato{ text-align: left;
+          padding: 10px;  }
+/* Formatando links */
+
+.link_menu{ padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #47673C; }

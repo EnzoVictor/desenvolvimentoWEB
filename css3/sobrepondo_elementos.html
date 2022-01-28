@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobrepondo elementos</title>
+    <style type="text/css">
+        .conteudo{ border: solid orange;
+                   background: orange;
+                   width: 200px;
+                   height: 200px;
+                   position: relative;
+                    }
+
+        .conteudo2{ border: solid orange;
+                   background: green;
+                   width: 200px;
+                   height: 200px;
+                   position: absolute;
+                   top: 180px;
+                   left: 200px;
+                   z-index: 10 /* Cria-se uma ordem para qual elemento irá se sobrepor */
+                    }
+
+        .conteudo3{ border: solid orange;
+                   background: red;
+                   width: 200px;
+                   height: 200px;
+                   position: absolute;
+                   top: 80px;
+                   left: 90px;
+
+                    }
+    </style>
+</head>
+<body>
+
+<div class="conteudo">
+    Conteúdo 1
+</div>
+
+<div class="conteudo2">
+    Conteúdo 2
+</div>
+
+<div class="conteudo3">
+    Conteúdo 3
+</div>
+
+</body>
+</html>
