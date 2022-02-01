@@ -1,0 +1,56 @@
+/*=========== SELETORES ============*/
+
+/* Aplicando o seletor universal
+
+
+*{ border: solid red; }
+
+
+Seletor filho: Neste exemplo, o link que está dentro do LI será formatado. Agora, o link que estiver fora, não será
+ alterado.
+ li>a{ color: red }
+
+Seletor descedente: Ele é parecido com o seletor filho. Porém, independente se for filho direto ou não, ele
+ será formatado.
+ div p{ color: green; }
+
+Seletor de irmão adjacente: Neste exemplo, ele seleciona o primeiro elemento <p> depois de qualquer elemento <h1>
+ (Mas não outros elementos <p>)
+ h1+p{ color: orange; }
+
+Seletor de irmão geral: Neste exemplo, se houvessem dois elementos <p> que fossem irmão de um elemento <h1>, essa
+  regra se aplicaria aos dois
+  h2~p{ color: gray; }    */
+
+/*========== NAGEVEGAÇÃO NA VERTICAL ==============*/
+/*
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;}
+
+li{
+    padding: 5px 20px;
+    background: url('seta.png') no-repeat center left;}
+*/
+ul{ padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: block;}
+
+ul a{
+      width: 200px;
+      height: 40px;
+      display: block;
+      color: #000;
+      text-decoration: none;
+      text-indent: 40px;
+      line-height: 40px;
+      font-weight: bold;
+
+      background: #f7b600 url('menu.png') no-repeat left;
+       }
+
+a:hover{ background-position: right;
+         background-color: #f99200;
+         color: white;   }
