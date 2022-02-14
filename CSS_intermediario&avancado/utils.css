@@ -130,30 +130,353 @@ ul#navegacao #atual a {
 */
 
 /*================= LAYOUT DE LARGURA FIXA ===================*/
-
+/*
 #container{
-           width: 700px;
+           width: 720px;
             margin: 0 auto;
             background: #fff;}
 
 #marca{
        height: 100px;
-        text-align: center;
         line-height: 100px;
-        background: #9e9e9e;}
+        background: #9e9e9e;
+        text-align: center;}
 
 #conteudo{
-            border: solid gray;
-            width: 420px;
+
+            width: 520px;
             float: right;}
+
+#conteudo-principal{ width: 320px;
+                     float: left;
+}
+
+#conteudo-secundario{ width: 180px;
+                      background: #d1d1d1;
+                      float: right;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{ padding: 5px; }
 
 #navegacao{
             width: 180px;
-            border: solid gray;
-            height: 200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             background: #CFD7D8;
 }
 
+#navegacao ul{ list-style: none; }
+
+#navegacao li a{ text-decoration: none; }
+
 #rodape{
-        border: solid gray;
+
+        background: #c4c4c4;
+        padding; 10px;
+        text-align: center;
         clear: both;}
+*/
+
+/*============= LAYOUT LÍQUIDO ===============*/
+/*
+#container{ width: 60%; /* Layout líquido utiliza %
+            margin: 0 auto;
+            background: #fff;}
+
+#marca{
+        height: 100px;
+        line-height: 100px;
+        background: #9e9e9e;
+        text-align: center;}
+
+#conteudo{
+            width: 74.28%;
+            float: right;
+            }
+
+#conteudo-principal{
+                    width:64%;
+                    float: left;}
+
+#conteudo-secundario{
+                        width: 36%;
+                        float: right;
+                        background: #d1d1d1;}
+
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+                        padding: 10px;}
+
+#navegacao{
+            width: 25%;
+            height: 200px;
+            background: #d1d1d1;
+            float: left;}
+
+#navegacao ul{ list-style: none; }
+
+#navegacao li a{ text-decoration: none; }
+
+#rodape{
+        padding: 10px;
+        text-align: center;
+        background: #c4c4c4;
+        clear: both;}
+*/
+
+/*============= IMAGEM LÍQUIDA ================*/
+/*
+#container{
+            width: 70%;
+            background: #fff;
+            margin: 0 auto;
+            min-width: 800px;
+            max-width: 1000px;}
+
+#marca{
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        background: #9e9e9e url('cabecalho2.jpg') no-repeat center;}
+
+#conteudo{
+            width: 80%;
+            float: right;
+}
+
+#conteudo-primario{
+
+                    width: 64%;
+                    float: left;
+                    }
+
+img.imagem-noticia{
+        width: 96%;
+        padding: 2%;
+        max-width: 600px;
+}
+
+#conteudo-secundario{
+
+                    width: 34%;
+                    float: right;
+                    background: #d1d1d1;
+                    }
+
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{ padding: 10px; }
+
+#navegacao{
+            width: 19%;
+            height: 180px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            float: left;
+            background: #d1d1d1;}
+
+#navegacao ul{ list-style: none; }
+
+#navegacao li a{ text-decoration: none; }
+
+#rodape{
+        background: #c4c4c4;
+        text-align: center;
+        padding: 10px;
+        clear: both;}
+*/
+
+/* ============== COLUNA FALSA =============== */
+/*
+#container{
+
+            width: 80%;
+            background: #fff url('coluna.png') repeat-y left top;
+            margin: 0 auto;
+            min-width: 800px;
+            max-width: 1500px;}
+
+#marca{
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        background: #225992 url('cabecalho2.jpg') no-repeat center;}
+
+#conteudo{
+
+            width: 80%;
+            float: right;
+}
+
+#conteudo-primario{
+                    width: 64%;
+                    float: left;
+                    }
+
+img.imagem-noticia{
+        width: 96%;
+        padding: 2%;
+        max-width: 600px;
+}
+
+#conteudo-secundario{
+
+                    width: 34%;
+                    float: right;
+                    background: #d1d1d1;
+                    }
+
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{ padding: 10px; }
+
+#navegacao{
+            width: 15%;
+            height: 180px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            float: left;
+            background: #d1d1d1;}
+
+#navegacao ul{ list-style: none; }
+
+#navegacao li a{ text-decoration: none; }
+
+#rodape{
+        background: #c4c4c4;
+        text-align: center;
+        padding: 10px;
+        clear: both;}
+*/
+
+/* ============ ESTILIZANDO TABELAS =============== */
+/*
+table{ width: 600px;
+        border-collapse: separate; /*Ou "collapse"}
+
+th, td {
+        padding: 5px;
+ }
+
+th{ border-top: solid 1px #999;
+    border-bottom: solid 1px #111;
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: 2px;
+    }
+
+tr.alternado{ background: #efefef; }
+
+.numero{ text-align: right; }
+
+.cursor:hover { background: #BEF3F9; }
+*/
+
+/*=================== ESTILIZANDO FORMULARIOS ====================*/
+/*
+fieldset {
+            margin: 20px 0px;
+            padding: 10px;
+             background: #F3F3F3;
+             border: solid 1px #ccc;}
+
+label{ display: block;
+        cursor: pointer;
+}
+
+textarea{ width: 350px;
+          height: 350px;  }
+
+input[type='text']{ width: 350px;}
+
+legend { font-weight: bold;
+        }
+
+.radio{ margin-right: 5px; }
+*/
+
+/* =================== ESTILIZANDO FORMULARIOS PARTE 2 ==================== */
+/*
+body{   font-family: "Trebuchet MS", Helvetica, Sans serif;
+        background: #643d87; }
+
+#container{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.3);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            margin-top: 120px;
+            text-align: center;
+}
+
+#container img{
+                margin-top: -70px;
+                margin-bottom: 20px;
+                }
+
+input{
+                    font-size: 18px;
+                    width: 60%;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    background-color: #fff;
+                    padding-left: 60px;
+                    border: none;
+                    background-repeat: no-repeat;
+                    background-position: 20px;
+
+}
+
+input.email{
+            background-image: url('icone-usuario.png')}
+
+input.senha{
+            background-image: url('icone-cadeado.png')}
+
+input.submit {
+                    color: #fff;
+                    background-color: #FF9504;
+                    border: solid 3px #D47B03;
+                    padding-right: 60px;
+                    background: -webkit-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: -moz-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: -o-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: linear-gradiant(to bottom #FFAA38, #FF9200);
+                    cursor: pointer;}
+*/
+
+/* ==================== ARREDONDAMENTO COM IMAGENS ====================== */
+
+.caixa {
+        width: 400px;
+        background: #dedede url('topo.png') no-repeat left top;}
+
+.caixa h2{
+            padding: 10px 10px;}
+
+.caixa p{
+            padding: 0px 10px 10px 10px;
+            background: url('baixo.png') no-repeat left bottom;}
+
+.box{
+    width: 400px;
+    background: url('fundo-arredondamento.png') repeat-y center;
+    }
+
+.box h2{
+        padding: 10px 10px;
+        background: url('topo2.png') no-repeat left top;}
+
+.box p{
+        padding: 10px;}
+
+.box .ultimo{
+        padding: 10px;
+        background: url('baixo2.png') no-repeat left bottom;}

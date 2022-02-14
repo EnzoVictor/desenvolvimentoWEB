@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilizando formulários</title>
+    <link rel="stylesheet" type="text/css" href="utils.css">
+</head>
+<body>
+    <h1>Estilizando formulários</h1>
+  <form>
+    <fieldset>
+
+        <legend>
+            Dados pessoais
+        </legend>
+
+        <div>
+          <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="url">URL:</label>
+            <input type="text" name="url" id="url">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Mensagem</legend>
+
+        <div>
+            <label for="comentario">Comentários:</label>
+            <textarea name="comentario " id="comentario"></textarea>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Atualizar</legend>
+
+        <h4>Me manter informado sobre novas novidades:</h4>
+
+        <div>
+            <label>
+                <input class="radio" type="radio" name="atualizar" id="sim">Sim
+            </label>
+
+            <label>
+                <input class="radio" type="radio" name="atualizar" id="nao">Não
+            </label>
+        </div>
+
+    </fieldset>
+  </form>
+</body>
+</html>

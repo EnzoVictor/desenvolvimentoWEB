@@ -1,0 +1,32 @@
+/*==== FORMATANDO O LOGO DO SITE =====*/
+
+*{
+    margin: 0px;
+    padding: 0px;}
+
+#logo{  background: url('fundo-site.png');
+        height: 230px;}
+
+.logo-site{
+
+            padding: 20px 0px 0px 400px;}
+
+.detalhe-logo{
+                float: right;
+                padding-right: 400px;}
+
+/*====== MENU LOGO =======*/
+
+.menu-logo ul{
+            padding: 20px 0px 0px 400px; }
+
+
+.menu-logo li{
+
+                display: inline;
+                padding: 10px;}
+
+.menu-logo a{
+                border: solid red;
+                display: inline;}
+
