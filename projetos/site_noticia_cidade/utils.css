@@ -1,32 +1,95 @@
+/*========= FORMATANDO A ESTRUTURA DO SITE =========*/
+.titulo-site h2{
+    background: #004080;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 5px;}
+
 /*==== FORMATANDO O LOGO DO SITE =====*/
 
 *{
-    margin: 0px;
-    padding: 0px;}
+    margin: 0;
+    padding: 0;}
 
-#logo{  background: url('fundo-site.png');
-        height: 230px;}
+#area-logo{
+            padding: 10px;
+            background: url('fundo-site.png') repeat-x;
+            height: 215px;
+            min-width: 1780px;
 
-.logo-site{
+            }
 
-            padding: 20px 0px 0px 400px;}
+.logo{
+
+            float: left;
+            width: 200px;
+            height: 80px;
+            z-index: 2;
+            margin-left: 400px;
+            background: url('logo-site.png') no-repeat;}
 
 .detalhe-logo{
-                float: right;
-                padding-right: 400px;}
+            float: right;
+            width: 200px;
+            height: 180px;
+            margin-right: 400px;
+            z-index: 0;
+            background: url('detalhe-topo.png') no-repeat;}
 
-/*====== MENU LOGO =======*/
+/*===== FORMATANDO O MENU DO LOGO =======*/
 
 .menu-logo ul{
-            padding: 20px 0px 0px 400px; }
+                list-style: none;
+                float: left;
+                width: 678px;;    /*678px;*/
+                margin-top: 120px;     /*120px;*/
+                margin-left: -130px;  /*400px;*/
+                z-index: 3;
+                }
 
+.menu-logo ul li{
 
-.menu-logo li{
+                float: left;
+                background: #cc0000;}
 
-                display: inline;
-                padding: 10px;}
+.menu-logo ul a{
+                float: left;
+                padding: 0 3em;
+                line-height: 2em;
+                text-decoration: none;
+                color: #fff;
+                background: url('divisor-site.png') repeat-y top right;
+                }
 
-.menu-logo a{
-                border: solid red;
-                display: inline;}
+.menu-logo ul a:hover{
+                color: #4d0000;}
 
+/*======== FORMATANDO O CONTEÚDO DO SITE =========*/
+
+#conteudo{
+            border: solid black;
+            margin: 0 auto;
+            padding: 10px;
+            width: 1100px;
+            background: url('fundo-caixa.png') repeat;}
+
+.entrevista{
+            float: left;
+            width: 200px;
+            }
+
+.noticias{
+            border: solid red;
+            float:right;
+            width: 850px;}
+
+.entrevista ul{
+            background: #fff;}
+
+.entrevista ul li{
+            border:solid blue;
+            list-style: none;
+            padding: 5px;}
+
+/*====== RODAPÉ ========*/
+.clear{ clear: both; }
