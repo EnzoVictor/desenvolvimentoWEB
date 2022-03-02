@@ -1,95 +1,125 @@
-/*========= FORMATANDO A ESTRUTURA DO SITE =========*/
-.titulo-site h2{
-    background: #004080;
-    color: #fff;
-    margin-bottom: 10px;
-    padding: 5px;}
-
-/*==== FORMATANDO O LOGO DO SITE =====*/
-
-*{
+/*===== FORMATANDO A ESTRUTURA DO SITE ======*/
+* {
     margin: 0;
     padding: 0;}
 
-#area-logo{
-            padding: 10px;
-            background: url('fundo-site.png') repeat-x;
-            height: 215px;
-            min-width: 1780px;
+/*====== AREA DO LOGO =======*/
 
-            }
+#area-logo{
+    float: left;
+    width: 100%;
+    height: 230px;
+    background: url('fundo-site.png') repeat-x;
+    min-width: 1671px;
+    }
 
 .logo{
-
-            float: left;
-            width: 200px;
-            height: 80px;
-            z-index: 2;
-            margin-left: 400px;
-            background: url('logo-site.png') no-repeat;}
+    float: left;
+    margin-left: 350px;
+    margin-top: 20px;}
 
 .detalhe-logo{
-            float: right;
-            width: 200px;
-            height: 180px;
-            margin-right: 400px;
-            z-index: 0;
-            background: url('detalhe-topo.png') no-repeat;}
+    float: right;
+    margin-right: 350px;
+    }
 
-/*===== FORMATANDO O MENU DO LOGO =======*/
+.menu-logo{
+
+    float: left;
+    margin-top: 130px;
+    margin-left: -100px;}
+
+/*=== FORMATANDO OS LINKS DO LOGO ====*/
 
 .menu-logo ul{
-                list-style: none;
-                float: left;
-                width: 678px;;    /*678px;*/
-                margin-top: 120px;     /*120px;*/
-                margin-left: -130px;  /*400px;*/
-                z-index: 3;
-                }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
 
 .menu-logo ul li{
-
-                float: left;
-                background: #cc0000;}
+    background: #cc0000;
+    float: left;
+    }
 
 .menu-logo ul a{
-                float: left;
-                padding: 0 3em;
-                line-height: 2em;
-                text-decoration: none;
-                color: #fff;
-                background: url('divisor-site.png') repeat-y top right;
-                }
+    display: block;
+    padding: 0 3em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    background: url('divisor-site.png') repeat-y left;
+    }
 
-.menu-logo ul a:hover{
-                color: #4d0000;}
+.menu-logo a:hover{
+    color: #660000;}
 
-/*======== FORMATANDO O CONTEÚDO DO SITE =========*/
+#home .menu-logo .home a,
+#brasil .menu-logo .brasil a{
+    background-color: #ff1a1a;}
+
+/*==== FORMATANDO O CONTEÚDO SO SITE ======*/
 
 #conteudo{
-            border: solid black;
-            margin: 0 auto;
-            padding: 10px;
-            width: 1100px;
-            background: url('fundo-caixa.png') repeat;}
+    border: solid blue;
+    margin: 0 auto;
+    padding: 20px;
+    width: 1200px;
+    background: url('fundo-caixa.png');
+    clear: both;}
 
 .entrevista{
-            float: left;
-            width: 200px;
-            }
+    border: solid red;
+    width: 200px;
+    float: left;}
 
-.noticias{
-            border: solid red;
-            float:right;
-            width: 850px;}
+.news{
+    border: solid red;
+    float: left;
+    width: 200px;
+    margin-top: 320px;
+    margin-left: -206px;
 
-.entrevista ul{
-            background: #fff;}
+    }
 
-.entrevista ul li{
-            border:solid blue;
-            list-style: none;
-            padding: 5px;}
+.ultima-entrevista{
+    border: solid black;
+    margin-left: 30px;
+    width: 400px;
+    float: left;}
 
-/*====== RODAPÉ ========*/
-.clear{ clear: both; }
+.destaque{
+    border: solid red;
+    width: 400px;
+    float: right;}
+
+.rodape{
+    border: solid gray;
+    clear: both;}
+
+/*==== FORMATANDO O TITULO DO COTEUDO ====*/
+
+.entrevista h2,
+.ultima-entrevista h2,
+.news h2 {
+    color: #fff;
+    background: #264d73;
+    margin-bottom: 20px;
+    padding: 5px;}
+
+/*=== FORMATANDO LISTAS DENTRO DO CONTEÚDO =====*/
+
+#conteudo .entrevista ul li{
+    background: #fff;
+    list-style: none;
+    padding: 10px;}
+
+#conteudo .entrevista a{
+    color: black;
+    text-decoration: none;}
+
+#conteudo .entrevista a:hover{
+    padding-left: 30px;
+    color: #b3b3b3;
+    background: url('marcador.png') no-repeat left;
+    }
