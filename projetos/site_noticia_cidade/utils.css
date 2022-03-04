@@ -79,19 +79,70 @@
     width: 200px;
     margin-top: 320px;
     margin-left: -206px;
-
     }
+/*=== ESTRUTURANDO A (NEWS)*/
+.conteudo-news{
+    background: #fff;}
 
+.email-news{
+    width: 180px;
+    height: 25px;}
+
+.enviar-news{
+    width: 110px;
+    height: 27px;
+    margin-top: 5px;
+    background-color: #cc0000;
+}
+/*=== FIM ====*/
 .ultima-entrevista{
     border: solid black;
     margin-left: 30px;
     width: 400px;
     float: left;}
+/*==== ESTRUTURANDO (ÚLTIMA NOTÍCIAS) =====*/
+.conteudo-ultima-entrevista{
+    background: #fff;}
+
+.ultima-entrevista .conteudo-ultima-entrevista h3{
+    background: #cc0000;
+    color: black;
+    }
+
+.ultima-entrevista .conteudo-ultima-entrevista img,
+.destaque .conteudo-destaque img{
+    width: 400px;
+    margin-top: 5px;}
+
+.ultima-entrevista .conteudo-ultima-entrevista a{
+    color: #cc0000;}
+/*=== FIM ====*/
+.mundo{
+    border: solid red;
+    float: left;
+    margin-top: 450px;
+    margin-left: -406px;
+    width: 400px;
+    }
 
 .destaque{
     border: solid red;
     width: 400px;
     float: right;}
+/*==== ESTRUTURANDO (DESTAQUE) =====*/
+.destaque .conteudo-destaque h3{
+    background: #e60000;
+    width: 200px;
+    color: black;    }
+
+.conteudo-destaque{
+    background: #fff;}
+
+.noticia-recente{
+    border: solid red;
+    float: right;
+    width: 400px;
+    margin-top: 10px;}
 
 .rodape{
     border: solid gray;
@@ -101,10 +152,12 @@
 
 .entrevista h2,
 .ultima-entrevista h2,
-.news h2 {
+.news h2,
+.mundo h2,
+.destaque h2 {
     color: #fff;
     background: #264d73;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px;}
 
 /*=== FORMATANDO LISTAS DENTRO DO CONTEÚDO =====*/
