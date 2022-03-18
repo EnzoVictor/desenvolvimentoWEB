@@ -90,6 +90,21 @@ body.fotos #navegacao a#fotos{
     float: left;
     margin: 0 0 20px 195px;}
 
+.primario h3{
+    color: #fff;
+    background: #cc0000;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: inline;
+    padding: 5px;}
+
+.secundario h3{
+    background: #ff0000;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: inline;
+    padding: 5px;}
+
 .conteudo-secundario{
     background: yellow;
     width: 270px;
@@ -101,6 +116,12 @@ body.fotos #navegacao a#fotos{
     width: 180px;
     float: left;
     margin: 0 0 20px -750px;}
+
+#duas-colunas .primario{
+    width: 640px;
+    background: green;
+    float: left;
+    margin: 0 0 20px 195px;}
 
 /*
     AREA DA CAIXA ========
@@ -115,6 +136,16 @@ body.fotos #navegacao a#fotos{
     background: #fff;
     padding: 5px;
     margin-top: 5px;}
+
+/*
+    FORMATANDO AS IMAGENS =======
+*/
+
+.primario img{
+    border: solid 2px #d1d1d1;}
+
+.secundario img{
+    border: solid 2px #d1d1d1;}
 
 /*
     FORMATANDO O LINK DO CONTEUDO LATERAL =======
@@ -133,6 +164,55 @@ body.fotos #navegacao a#fotos{
     color: #a1a1a1;
     background: #f9f9f9 url('marcador.png') no-repeat left center;
     padding-left: 25px;}
+
+/*
+    FORMATANDO O FORMULARIO E INPUT =======
+*/
+
+input{
+    padding: 5px;
+    width: 150px;
+    font-size: 0.9em;
+    background: #fff;
+    }
+
+label{
+    cursor: pointer;
+    display: block;}
+
+input.submit{
+    color: #fff;
+    background-color: #cc0000;
+    margin-top: 4px;
+    width: 100px;}
+
+/*
+    FORMATANDO O CONTEUDO MUNDO =========
+*/
+
+.noticias-mundo li{
+    border-bottom: solid 1px #f3f3f3;
+    padding: 2px;
+    height: 65px;}
+
+.noticias-mundo li a{
+    text-decoration: none;
+    }
+
+.noticias-mundo li a img{
+    float: left;
+    margin: 5px;}
+
+.noticias-mundo li a h3{
+    font-size:0.9em;
+    color: #1a75ff;}
+
+.noticias-mundo li a p{
+    font-size: 0.8em;}
+
+.noticias-mundo li:hover{
+    background: #eee;
+    cursor: pointer;}
 
 /*
     AREA DO RODAPE =======
