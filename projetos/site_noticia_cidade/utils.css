@@ -69,7 +69,7 @@ body.internacional #navegacao a#internacional,
 body.economia #navegacao a#economia,
 body.saude #navegacao a#saude,
 body.ciencia #navegacao a#ciencia,
-body.fotos #navegacao a#fotos{
+body.china #navegacao a#china{
     background: #ff0000;
     color: #fff;
     cursor: text;}
@@ -84,11 +84,23 @@ body.fotos #navegacao a#fotos{
     margin-top: 60px;
     }
 
-.conteudo-primario{
+#tres-colunas .conteudo-primario{
     background: green;
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;}
+
+#duas-colunas .primario{
+    width: 555px;
+    background: green;
+    float: left;
+    margin: 0 0 20px 195px;}
+
+#uma-coluna .primario{
+    width: 750px;
+    background: green;
+    float: left;
+    margin: 0 0 20px 0px;}
 
 .primario h3{
     color: #fff;
@@ -117,12 +129,6 @@ body.fotos #navegacao a#fotos{
     float: left;
     margin: 0 0 20px -750px;}
 
-#duas-colunas .primario{
-    width: 640px;
-    background: green;
-    float: left;
-    margin: 0 0 20px 195px;}
-
 /*
     AREA DA CAIXA ========
 */
@@ -130,12 +136,16 @@ body.fotos #navegacao a#fotos{
 .caixa{
     margin: 10px 0 10px 0;
     padding: 5px 0 5px 0;
-    background: #f3f3f3 url('fundo-caixa.png');}
+    background: #f3f3f3 url('fundo-caixa.png');
+    }
 
 .caixa-conteudo{
     background: #fff;
     padding: 5px;
     margin-top: 5px;}
+
+.caixa-conteudo a{
+    color: #cc0000;}
 
 /*
     FORMATANDO AS IMAGENS =======
@@ -197,6 +207,7 @@ input.submit{
 
 .noticias-mundo li a{
     text-decoration: none;
+    color: #000;
     }
 
 .noticias-mundo li a img{
@@ -205,7 +216,9 @@ input.submit{
 
 .noticias-mundo li a h3{
     font-size:0.9em;
-    color: #1a75ff;}
+    color: #1a75ff;
+    background: none;
+    text-transform: none;}
 
 .noticias-mundo li a p{
     font-size: 0.8em;}
