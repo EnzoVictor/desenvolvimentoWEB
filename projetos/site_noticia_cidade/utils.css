@@ -3,7 +3,8 @@
     padding: 0px;}
 
 body{
-    background: url('fundo-site.png') repeat-x;}
+    background: url('fundo-site.png') repeat-x;
+    }
 
 ul{
     margin: 0px;
@@ -68,7 +69,7 @@ body.brasil #navegacao a#brasil,
 body.internacional #navegacao a#internacional,
 body.economia #navegacao a#economia,
 body.saude #navegacao a#saude,
-body.ciencia #navegacao a#ciencia,
+body.tecnologia #navegacao a#tecnologia,
 body.china #navegacao a#china{
     background: #ff0000;
     color: #fff;
@@ -85,20 +86,17 @@ body.china #navegacao a#china{
     }
 
 #tres-colunas .conteudo-primario{
-    background: green;
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;}
 
 #duas-colunas .primario{
     width: 555px;
-    background: green;
     float: left;
     margin: 0 0 20px 195px;}
 
 #uma-coluna .primario{
     width: 750px;
-    background: green;
     float: left;
     margin: 0 0 20px 0px;}
 
@@ -118,13 +116,11 @@ body.china #navegacao a#china{
     padding: 5px;}
 
 .conteudo-secundario{
-    background: yellow;
     width: 270px;
     margin: 0 0 20px 15px;
     float: left;}
 
 .conteudo-lateral{
-    background: red;
     width: 180px;
     float: left;
     margin: 0 0 20px -750px;}
