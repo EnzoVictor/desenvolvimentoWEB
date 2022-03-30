@@ -1,0 +1,175 @@
+/*
+    ===================
+    ESTRUTURANDO O SITE
+*/
+
+*{
+    margin: 0;
+    padding: 0;}
+
+a{
+    text-decoration: none;}
+
+body{
+    background: #fff url('bg.png');
+    margin: 15px;
+    font-family: Helvetica, "Trebuchet MS", sans-serif;}
+
+ul{
+    list-style: none;}
+
+h2{
+    color: #7d7640;
+    padding: 5px 0px;
+    font-size: 1.1em;}
+
+p{
+    font-size: 1em;
+    margin-bottom: 20px;}
+
+/*
+    ========================
+    ESTRUTURANDO O TOPO DO SITE
+*/
+
+#container{
+    background: #ede9cc url('bg-container.png') top center repeat-y;
+    margin: 0 auto;
+    min-width: 750px;
+    max-width: 1190px;
+    position: relative;
+    }
+
+#topo{
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;
+    }
+
+#area-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('topo-imagem-principal.png') no-repeat;
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+    }
+
+#area-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('topo-imagem-lateral.png') no-repeat;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+}
+
+#conteudo-menu{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 10px;}
+
+#conteudo-locais{
+    font-size: 0.8em;
+    border-top: solid 1px #b5ab56;
+    border-bottom: solid 1px #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #8b8448;
+    line-height: 2.1em;}
+
+#conteudo-locais a.reserva{
+    background: #a29750;
+    color: #fff5b0;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 5px;}
+
+#link-menu{
+    margin-top: 15px;
+    width: 120px;
+    }
+
+.menu-vertical a{
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #55552b;
+    }
+
+.menu-vertical a:hover{
+    background: #fff5b0;}
+
+.menu-vertical img{
+    position: absolute;
+    top: 60px;
+    right: 10px;}
+
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: url('logo.png') no-repeat;
+    z-index: 3;
+    width: 150px;
+    height: 66px;
+    text-indent: -90000px;}
+/* FIM TOPO DO SITE
+================*/
+
+/* INICIO DA AREA DOS CONTEUDOS DO SITE
+=====================================================*/
+
+#area-principal{
+    float: left;
+    margin-top: 250px;
+    width: 50%;
+    background: url('bg-area-principal.png') top left repeat-x;
+    padding: 15px 0px;}
+
+#area-lateral{
+    float: right;
+    margin-top: 250px;
+    width: 50%;
+    background: url('bg-area-lateral.png') top left repeat-x;
+    padding: 20px 0px;}
+
+#rodape{
+    clear: both;
+    color: #7d7640;
+    padding: 15px;
+    background: #fff url('bg-rodape.png') repeat-x top;}
+
+.menu{
+    margin: 0 auto;
+    width: 90%;}
+
+.link-menu-lateral li{
+    border-bottom: 1px solid #fff5b0;
+    display: block;
+    padding: 6px;
+    height: 8em;
+}
+
+.link-menu-lateral a img{
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    }
+
+.link-menu-lateral a p{
+    font-size: 0.8em;
+    color: #000;}
+
+.link-menu-lateral h3{
+    background: url('ornamento.png') no-repeat right center;
+    margin-bottom: 10px;
+    color: #615b2d;}
+
+.link-menu-lateral li:hover{
+    background: #f6f3d6;
+    cursor: pointer;}
+
