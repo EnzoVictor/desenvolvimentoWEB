@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Sizing e arredondamentos de cantos</title>
+    <style type="text/css">
+        .caixa{
+            background: gray;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;}
+
+        .outra-caixa{
+            width: 300px;
+            height: 300px;
+            background-image: url('imagem6.jpg');
+            -webkit-border-radius: 10px;
+            -woz-border-radius: 10px;
+            border-radius: 150px; }
+
+        .outro-exemplo{
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            border-radius: 100px 20px 30px 40px;}
+
+        .exemplo-padding{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            background: #999;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            -webkit-border-radius: 10px;
+            -woz-border-radius: 10px;
+            border-radius: 10px;
+            }
+
+        .sizing{
+            background: red;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Teste caixa</h1>
+        <p>
+            Gostaria de aprender como instalar o Nginx e ativar o uso de CGIs Python em um computador executando
+            o Ubuntu Linux? Neste tutorial, vamos mostrar como ativar o recurso CGI e ativar scripts Python
+            para serem executados no servidor Nginx.
+        </p>
+    </div>
+
+    <div class="outra-caixa">
+    </div>
+
+    <div class="outro-exemplo">
+    </div>
+
+    <div class="exemplo-padding">
+        <p>Observe que o tamanho e largura é a mesma que o TESTE CAIXA.</p>
+        <p>Porém, somando o valor do padding, a largura e tamanho aumentam.</p>
+    </div>
+
+    <div class="sizing">
+         <p>
+            Gostaria de aprender como instalar o Nginx e ativar o uso de CGIs Python em um computador executando
+            o Ubuntu Linux? Neste tutorial, vamos mostrar como ativar o recurso CGI e ativar scripts Python
+            para serem executados no servidor Nginx.
+        </p>
+    </div>
+</body>
+</html>

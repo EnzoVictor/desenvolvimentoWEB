@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Animações</title>
+    <style>
+        @keyframes animacao-caixa{
+            from{
+                border-radius: 0px;
+                border-bottom: 20px solid  black;
+                top: 0;
+                left: 0;
+                background: red;}
+            to{
+                border-bottom: 20px solid blue;
+                border-radius: 300px;
+                top: 200px;
+                left: 200px;
+                background: black;}
+        }
+
+        -webkit-@keyframes animacao-caixa{
+            from{
+                border-radius: 0px;
+                border-bottom: 20px solid  black;
+                top: 0;
+                left: 0;
+                background: red;}
+            to{
+                border-bottom: 20px solid blue;
+                border-radius: 300px;
+                top: 200px;
+                left: 200px;
+                background: black;}
+        }
+
+        -moz-@keyframes animacao-caixa{
+            from{
+                border-radius: 0px;
+                border-bottom: 20px solid  black;
+                top: 0;
+                left: 0;
+                background: red;}
+            to{
+                border-bottom: 20px solid blue;
+                border-radius: 300px;
+                top: 200px;
+                left: 200px;
+                background: black;}
+        }
+
+        -o-@keyframes animacao-caixa{
+            from{
+                border-radius: 0px;
+                border-bottom: 20px solid  black;
+                top: 0;
+                left: 0;
+                background: red;}
+            to{
+                border-bottom: 20px solid blue;
+                border-radius: 300px;
+                top: 200px;
+                left: 200px;
+                background: black;}
+        }
+
+        .caixa{
+            position: relative;
+            background: red;
+            width: 300px;
+            height: 300px;
+            /*animation-name: animacao-caixa;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;*/
+
+            animation: animacao-caixa 5s 2s 4 alternate;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="caixa">
+
+    </div>
+
+</body>
+</html>
