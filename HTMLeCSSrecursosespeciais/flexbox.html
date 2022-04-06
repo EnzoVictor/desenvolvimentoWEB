@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbos - Layout</title>
+    <style type="text/css">
+      #container{
+        background: gray;
+        display: flex;
+
+        /* row| row-reverse| column| column-reverse|*/
+        flex-direction: row;
+
+        /* nowrap| wrap| wrap-reverse|*/
+        flex-wrap: wrap;
+
+        /* flex-start| flex-end| center| space-between| space-around|*/
+        justify-content: center;
+        }
+
+      .child{
+        width: 200px;
+        height: 200px;
+        background: red;
+        border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+
+  <div id="container">
+      <div class="child">Item 01</div>
+      <div class="child">Item 02</div>
+      <div class="child">Item 03</div>
+  </div>
+
+</body>
+</html>
