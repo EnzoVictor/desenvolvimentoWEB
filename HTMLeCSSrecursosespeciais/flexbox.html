@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <title>Flexbos - Layout</title>
     <style type="text/css">
-      #container{
-        background: gray;
-        display: flex;
+        #container{
+            background: gray;
+            display: flex;
 
-        /* row| row-reverse| column| column-reverse|*/
-        flex-direction: row;
 
-        /* nowrap| wrap| wrap-reverse|*/
-        flex-wrap: wrap;
+            /* row| row-reverse| column| column-reverse|*/
+            /*flex-direction: row;*/
 
-        /* flex-start| flex-end| center| space-between| space-around|*/
-        justify-content: center;
+            /* nowrap| wrap| wrap-reverse|*/
+            /*flex-wrap: wrap;*/
 
-        /* stretch| center| flex-start| flex-end| baseline| */
-        align-items: flex-start;
+            /* flex-start| flex-end| center| space-between| space-around|*/
+            justify-content: space-around;
+
+            /* stretch| center| flex-start| flex-end| baseline| */
+            /*align-items: flex-start;*/
         }
 
-      .child{
-        width: 200px;
-        height: 200px;
-        background: red;
-        border: solid 1px black;
+        .child{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 1px black;
+
+            /*Define a capacidade de reução de tamanho do item.*/
+            /*flex-shrink: 1;*/
+
+            /*Indica o tamanho inicial do flex item antes da distribuição do espaço restante.*/
+            flex-basis: 200px;
         }
+
+        .ordem{
+            order: 0;
+            /* Essa propriedade ajusta o tamanho proporcional ao container*/
+            /*flex-grow: 1;*/
+            flex-shrink: 1;}
+
+
     </style>
 </head>
 <body>
@@ -35,6 +50,7 @@
       <div class="child">Item 01</div>
       <div class="child">Item 02</div>
       <div class="child">Item 03</div>
+      <div class="child ordem">Item 04</div>
   </div>
 
 </body>
