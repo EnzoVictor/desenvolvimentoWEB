@@ -1,53 +1,54 @@
+/*=====================
+*/
 *{
     margin: 0;
     padding: 0;}
 
 body{
     background: url('fundo.png') repeat-x;
-    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    font: 12 "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     }
 
-ul{
-    list-style: none;}
-/*
-    ESTRUTURANDO O TOPO DO SITE
-*/
+/*FORMATANDO O TOPO DO SITE
+===========================*/
+#container{
+    width: 1080px;
+    margin: 0 auto;}
 
-header{
-    margin: 0 auto;
-    margin-top: 20px;
-    display: flex;
-    border: 1px solid red;
-    width: 60%;
-    justify-content: space-between;}
+#logo h1{
+    float: left;}
 
-#area-menu-principal{
-    border: solid 1px blue;
-    }
-
-#area-logo{
-    border: solid 1px yellow;
-    width: 300px;
-    height: 40px;
+#logo a{
+    width: 256px;
+    height: 21px;
+    display: block;
+    text-indent: -9999px;
     background: url('logo.png') no-repeat;}
 
-#area-logo h1{
-    text-indent: -9000px;
-    }
+header{
+    padding: 15px 0px;
+    height: 55px;}
 
-/*
-    FORMATANDO O LINK DO TOPO DO SITE
-*/
+nav ul.menu-topo{
+    float: right;
+    list-style: none;}
 
-#area-menu-principal a{
-    color: #804000;
-    font-size: 0.9em;}
-
-#area-menu-principal ul li{
+nav ul.menu-topo li{
     float: left;
-    padding-left: 20px;}
+    margin: 15px;}
 
-#area-menu-principal ul a{
+
+/*FORMATANDO OS LINKS DO TOPO DO SITE
+====================================*/
+a:link, a:visited, a:active{
+    color: #af670a;
+    text-decoration: none;}
+
+nav ul li a:link{
+    padding-bottom: 3px;
     display: block;
-    text-decoration: none;
-    padding-top: 5px;}
+    text-transform: uppercase;}
+
+a:hover{
+    color: #227115;
+    border-bottom: 1px solid #535858;}

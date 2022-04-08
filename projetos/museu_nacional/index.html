@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Museu Nacional</title>
+    <link rel="stylesheet" type="text/css" href="/desenvolvimentoWEB/HTMLeCSSrecursosespeciais/normalize.css">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-    <header>
+    <div id="container">
+        <!-- INICIO DO HEADER (TOPO) -->
+        <header>
+            <div id="logo">
+                <h1><a href="">Museu nacional</a></h1>
+            </div>
 
-        <div id="area-logo">
-            <h1>Museu nacional</h1>
-        </div>
+            <nav>
+                <ul class="menu-topo">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Acervo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
 
-        <div id="area-menu-principal">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">EXPOSIÇÕES</a></li>
-                <li><a href="">PESQUISA</a></li>
-                <li><a href="">ACERVO</a></li>
-                <li><a href="">VÍDEOS</a></li>
-                <li><a href="">FOTOS</a></li>
-                <li><a href="">CONTATO</a></li>
-
-            </ul>
-        </div>
-
-    </header>
+        </header>
+        <!-- FIM DO HEADER (TOPO) -->
+    </div>
 
 </body>
 </html>
