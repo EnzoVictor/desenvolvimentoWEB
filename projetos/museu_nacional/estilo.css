@@ -9,6 +9,27 @@ body{
     font: 12 "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     }
 
+input{
+    padding-left: 2px;}
+
+section{
+    font-size: 0.9em;}
+
+h3{
+    color: #995c00;
+    text-transform: uppercase;
+    padding-bottom: 10px;}
+
+h2{
+    color: #227115;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 10px;}
+
+fieldset{
+    border: none;}
+
 /*FORMATANDO O TOPO DO SITE
 ===========================*/
 #container{
@@ -49,6 +70,114 @@ nav ul li a:link{
     display: block;
     text-transform: uppercase;}
 
-a:hover{
+nav a:hover,
+article.exposicao a:hover{
     color: #227115;
     border-bottom: 1px solid #535858;}
+
+/* FORMATANDO O CONTEÚDO DO SITE
+======================================*/
+#principal{
+    width: 700px;
+    float: left;}
+
+aside{
+    width: 350px;
+    background: #ebe7dd;
+    float: right;
+    margin-bottom: 30px;}
+
+aside section.visita{
+    background: #cdc8b1;
+    }
+
+aside section{
+    margin-bottom: 10px;}
+
+aside section.visita{
+}
+
+aside .visita,
+aside .galeria-fotos{
+    padding: 15px;}
+
+aside .visita input.submit{
+    width: 300px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background: #9b9271;}
+
+aside .visita input.data{
+    width: 125px;
+    cursor: pointer;
+    border: none;}
+
+aside .visita input.qtd-pessoas{
+    width: 40px;
+    cursor: pointer;
+    border: none;}
+
+aside .visita form{
+    margin-left: -13px;}
+
+article.video{
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+    }
+
+article.mapa{
+    float: left;
+    width: 310px;
+    margin-left: 37px;
+    }
+
+article.exposicao{
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+    }
+
+article.exposicao ul{
+    padding-left: 20px;}
+
+article.historia{
+    float: left;
+    width: 310px;
+    margin-left: 37px;
+    }
+
+article{
+    margin-bottom: 30px;}
+
+/* FORMATANDO AS FOTOS DO CONTEUDO
+=====================================*/
+aside section.galeria-fotos a{
+    display: block;
+    background: url('fundo-foto.png') no-repeat;
+    float: left;
+    padding: 19px 15px 15px 15px;
+    margin-right: 35px;}
+
+aside section.galeria-fotos img{
+    margin-left: 2px;}
+
+/*RODAPÉ DO SITE
+======================================*/
+footer{
+    clear: both;
+    text-align: center;
+    background: url('fundo-rodape.png') no-repeat top center;}
+
+footer p{
+    padding-top: 10px;
+    }
+
+footer p a{
+    margin-left: 10px;}
+
+footer p a:hover{
+    color: #227115;}
