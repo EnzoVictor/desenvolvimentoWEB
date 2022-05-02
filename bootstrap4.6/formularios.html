@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap - Formulários</title>
+</head>
+<body style="margin-bottom: 200px; padding: 16px;">
+    <!-- Classes: form-control-<opções>
+    Opções: sm, lg
+    -->
+    <form>
+        <!-- Caixas de textos -->
+        <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input class="form-control" type="text" id="usuario" placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="text" id="email" placeholder="Insira seu E-mail" readonly>
+            <small>Verificando seu e-mail</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="estado">Estados:</label>
+            <select class="form-control" id="estado">
+                <option>SP</option>
+                <option>SC</option>
+                <option>BH</option>
+                <option>DF</option>
+                <option>MA</option>
+            </select>
+        </div>
+        <br>
+        <!-- Textarea -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3" cols="3"></textarea>
+        </div>
+        <br>
+        <!-- File input -->
+        <div class="form-group">
+            <label for="arquivo">Selecione o arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+        <!-- Custom file input -->
+        <div class="custom-file">
+            <input class="custom-file-input" type="file" id="file">
+            <label class="custom-file-label" for="file">Selecione o arquivo:</label>
+        </div>
+        <br>
+        <br>
+        <!-- Range -->
+        <div class="form-group">
+            <label for="satisfacao">Satifação:</label>
+            <input class="custom-range" type="range" id="satisfacao" min="1" max="5">
+        </div>
+        <!-- Botão -->
+        <input class="btn btn-primary" type="submit" name="salvar" value="salvar">
+    </form>
+
+    <br>
+    <br>
+    <!-- Formulário inline -->
+    <form class="form-inline">
+        <input class="form-control mr-2" type="text" placeholder="Digite seu email">
+        <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+        <input class="btn btn-primary" type="submit" value="Acessar">
+    </form>
+
+    <br>
+    <!-- Validação de formulário
+        Classes: is-valid, is-invalid, valid-feedback, invalid-feedback
+        -->
+    <form>
+        <div class="form-group">
+            <label for="user">Usuário:</label>
+            <input class="form-control is-valid" type="text" id="user" placeholder="Insira seu nome">
+        </div>
+        <diV class="form-group">
+            <label for="password">Senha:</label>
+            <input class="form-control is-invalid" type="password" id="password" placeholder="Insira sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </diV>
+        <input class="btn btn-primary" type="submit" name="Cadastrar">
+    </form>
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+</script>
+
+<!-- Também, pode ser utilizado importando o arquivo diretamente do diretório bootstrap4.6. Segue o exemplo:
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+-->
+
+</body>
+</html>
