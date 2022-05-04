@@ -7,23 +7,113 @@
   <title>Bootstrap - Cards</title>
 </head>
 <body style="margin-bottom: 200px; padding: 16px;">
-  <h2>Card simples</h2>
-  <div>
-    <div>
-      <h4>Titulo do cartão</h4>
-      <h6>Subtitulo do cartão</h6>
+  <h2>Cartão simples</h2>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
+      <p class="card-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a class="btn btn-outline-primary" href="#">Ler mais</a>
+    </div>
+  </div>
+  <br>
+  <h2>Cartao com imagem</h2>
+  <div class="card">
+    <img class="card-img-top" src="https://source.unsplash.com/random/600x100">
+    <div class="card-body">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
+      <p class="card-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a class="btn btn-outline-primary" href="#">Ler mais</a>
+    </div>
+    <img class="card-img-bottom" src="https://source.unsplash.com/random/600x200">
+  </div>
+  <br>
+  <h2>Cartão com imagem sobreposta</h2>
+  <div class="card text-white">
+    <img class="card-img" src="https://source.unsplash.com/random/600x250">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
+      <p class="card-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a class="btn btn-outline-light" href="#">Ler mais</a>
+    </div>
+  </div>
+  <br>
+  <h2>Cartão com cabeçalho</h2>
+  <div class="card">
+    <div class="card-header">
+      Cabeçalho do cartão
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took
         a galley of type and scrambled it to make a type specimen book.
       </p>
-      <a href="#">Ler mais</a>
+      <a class="btn btn-outline-danger" href="">Ler mais</a>
     </div>
   </div>
-
-
-
-
+  <br>
+  <h2>Cartão com rodapé e alinhamento</h2>
+  <div class="card text-center">
+    <div class="card-header">
+      cabeçalho do cartão
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
+      <p class="card-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a class="btn btn-outline-warning" href="">Ver mais</a>
+    </div>
+    <div class="card-footer">
+      Rodapé do site
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a href="" class="nav-link active">Item 1</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Item 2</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link disabled">Item 3</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Titulo do cartão</h4>
+      <h6 class="card-subtitle">Subtitulo do cartão</h6>
+      <p class="card-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <a class="btn btn-outline-secondary btn-block" href="">Ler mais</a>
+    </div>
+  </div>
 
 
 
