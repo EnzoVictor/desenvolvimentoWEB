@@ -1,0 +1,22 @@
+/*Topo do site*/
+#home {
+	background: #ffc107;
+	color: white;
+}
+
+header ul a{
+    color: #896701;
+    padding: 8px;
+}
+
+header ul a:hover{
+    color: #211B09;
+}
+
+header ul button{
+    margin-left: 25px;
+}
+
+header img{
+    height: 50px;
+}
