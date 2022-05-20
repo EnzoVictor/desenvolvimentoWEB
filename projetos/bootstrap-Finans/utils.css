@@ -1,4 +1,7 @@
 /*Topo do site*/
+/*
+=======HEADER========
+*/
 #home {
 	background: #ffc107;
 	color: white;
@@ -13,10 +16,29 @@ header ul a:hover{
     color: #211B09;
 }
 
-header ul button{
-    margin-left: 25px;
-}
-
 header img{
     height: 50px;
 }
+
+
+
+/*Formatando o conteúdo do site*/
+/*
+========SECTION SAIBA E JUROS
+*/
+.caixa{
+    border: 1px solid #f5f5f5;
+
+}
+
+/*Footer Rodapé*/
+/*
+====Links do rodape===
+*/
+footer p a{
+    text-decoration: none;
+    margin: 5px 15px;
+}
+footer p a:hover{
+    text-decoration: none;
+    }
