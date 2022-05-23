@@ -5,7 +5,7 @@
     padding: 0;}
 
 body{
-    background: url('fundo.png') repeat-x;
+    background: url('imagens/fundo.png') repeat-x;
     font: 12 "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     }
 
@@ -44,7 +44,7 @@ fieldset{
     height: 21px;
     display: block;
     text-indent: -9999px;
-    background: url('logo.png') no-repeat;}
+    background: url('imagens/logo.png') no-repeat;}
 
 header{
     padding: 15px 0px;
@@ -157,7 +157,7 @@ article{
 =====================================*/
 aside section.galeria-fotos a{
     display: block;
-    background: url('fundo-foto.png') no-repeat;
+    background: url('imagens/fundo-foto.png') no-repeat;
     float: left;
     padding: 19px 15px 15px 15px;
     margin-right: 35px;}
@@ -170,7 +170,7 @@ aside section.galeria-fotos img{
 footer{
     clear: both;
     text-align: center;
-    background: url('fundo-rodape.png') no-repeat top center;}
+    background: url('imagens/fundo-rodape.png') no-repeat top center;}
 
 footer p{
     padding-top: 10px;

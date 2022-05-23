@@ -1,5 +1,5 @@
 /* Formatando a estrutura do site */
-body{ background-image: url('fundoAnnaBella.png'); }
+body{ background-image: url('imagens/fundoAnnaBella.png'); }
 
 a{ text-decoration: none;
     }
@@ -30,7 +30,7 @@ p{ text-align: left;
 .imagem{ border-color: #b8aa94;
          border-width: 10px;
          border-style: outset;
-         margin-left: 122px;
+         margin-left: 120px;
          margin-right: 110px;
             }
 
