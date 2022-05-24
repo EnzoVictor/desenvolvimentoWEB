@@ -13,14 +13,16 @@
 <body>
     <!--Iniciando o topo do site -->
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+
+            <div class="container">
                 <!--Logo-->
-                <a class="nav-brand" href="">logo
+                <a class="nav-brand" href="index.html">
+                    <img src="imagens/spotify.svg" style="width: 142px;">
                 </a>
                 <!--Hambuguer-->
                 <button class="navbar-toggler" data-target="#menu-spotify" data-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars text-white"></i>
                 </button>
                 <!--Menus-->
                 <div class="navbar-collapse collapse" id="menu-spotify">
@@ -34,8 +36,8 @@
                         <li class="nav-item">
                             <a href="" class="nav-link">Baixar</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">|</a>
+                        <li class="nav-item divisor">
+                            |
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Inscreva-se</a>
@@ -45,18 +47,31 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
     <!--Encerrando o topo-->
 
+    <!--Iniciando o conteúdo principal (MUSICA PARA TODOS) -->
+    <section id="home" class="d-flex">
+        <div class="container align-self-center">
+            <div class="row capa">
+                <div class="col-md-12">
 
+                    <h1>Música para todos</h1>
+                    <a href="" class="btn btn-custom btn-roxo btn-lg">
+                        Aproveite o Spotify Free
+                    </a>
 
+                    <a href="" class="btn btn-custom btn-branco btn-lg">
+                        Obter Spotify Premium
+                    </a>
 
-
-
-
-
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
