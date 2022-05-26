@@ -131,7 +131,20 @@ footer{
 footer h4{
     color: #919496;
     font-size: 0.8em;
-    margin-top: -10px;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
 }
 
 /*
@@ -161,6 +174,13 @@ h3{
     .btn-custom{
         margin-top: 10px;
     }
+    footer img{
+        width: 120px;
+    }
+    footer ul li{
+        float: left;
+        margin: 0px 10px 0px 1px;
+    }
  }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -171,12 +191,24 @@ h3{
     .btn-custom{
         margin-top: 10px;
     }
+    footer img{
+        width: 120px;
+        margin-bottom: 5px;
+    }
+    footer ul li{
+        float: left;
+        margin: 0px 10px 0px 1px;
+    }
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1{
         font-size: 4em;
+    }
+
+    footer img{
+        width: 120px;
     }
  }
 
@@ -185,6 +217,9 @@ h3{
     h1{
         font-size: 5em;
     }
+    footer img{
+        width: 142px;
+    }
  }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -192,11 +227,17 @@ h3{
     h1{
         font-size: 6em;
     }
+    footer img{
+        width: 142px;
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     h1{
         font-size: 7em;
+    }
+    footer img{
+        width: 142px;
     }
  }
