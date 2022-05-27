@@ -13,8 +13,136 @@
             <div class="col-sm-8 m-auto">
 
                 <h1>Slider simples</h1>
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h1>Item 1</h1>
+                            <p>
+                                Lorem Ipsum
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Item 2</h1>
+                            <p>
+                                Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <h1>lider simples com imagem</h1>
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagem1.jpeg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem2.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
 
+                <h1>Slider com controles</h1>
+                <div id="carousel-controles" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagem3.jpeg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem1.jpeg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem4.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <a href="#carousel-controles" data-slide="prev" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <h1>Slider com indicadores</h1>
+                <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carousel-indicadores" data-slide-to="0">
+                        </li>
+                        <li data-target="#carousel-indicadores" data-slide-to="1">
+                        </li>
+                        <li data-target="#carousel-indicadores" data-slide-to="2">
+                        </li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagem5.jpeg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem2.jpeg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem1.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                       <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                       <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <h1>Slider com legendas</h1>
+                <div class="carousel slide" id="carousel-legendas" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-legendas"></li>
+                        <li data-target="#carousel-legendas" data-slide-to="1"></li>
+                        <li data-target="#carousel-legendas" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagem1.jpeg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h2>Lengendas para esta imagem</h2>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagem3.jpeg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h2>Texto2 pra esta imagem</h2>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagem4.jpeg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <a href="">
+                                    <button type="button" class="btn btn-primary">Insira sua legenda</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel-legendas" data-slide="prev">
+                        <i class="fa-solid fa-hand-point-left"></i>
+                    </a>
+
+                    <a class="carousel-control-next" data-slide="next" href="#carousel-legendas">
+                        <i class="fa-solid fa-hand-point-right"></i>
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
