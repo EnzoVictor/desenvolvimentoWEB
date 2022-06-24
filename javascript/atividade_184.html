@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        //Solicitando dados para o usuário
+        var num1 = prompt("Insira um valor:")
+        var operacao = prompt("Insira o tipo de operação (soma/subtração):")
+        var num2 = prompt("Insira outro valor:")
+
+        //Mudando o tipo dos valores das variáveis
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+
+        //Criando a função para executar a operação
+
+        function calculo (num1, num2, operacao){
+            if (operacao === "soma"){
+                resultado = num1 + num2
+            }else if (operacao === "subtração"){
+                resultado = num1 - num2
+            }else{
+                resultado = "Tipo de operação inválido"
+            }
+
+            return "O resultado é: " + resultado
+        }
+
+        document.write(calculo(num1, num2, operacao))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        function abrirPopUp(){
+            nova_aba = window.open('https://www.google.com.br', 'nova aba', 'width=500, height=350')
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="abrirPopUp()" type="button">Abrir uma nova guia</button>
+    <button onclick="window.close(nova_aba)" type="button">Fechar guia</button>
+    <button onclick="window.print()" type="button">Imprimir</button>
+</body>
+</html>

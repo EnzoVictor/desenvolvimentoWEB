@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        var nome = prompt("Insira seu nome: ")
+        var idade = prompt("Informe a sua idade:")
+
+        if (idade >= 0 && idade < 15){
+            document.write("Notamos que o senhor " + nome + " tem idade de CRIANÇA.")
+            alert("CRIANÇA")
+        }
+        else if (idade >= 15 && idade < 30){
+            document.write("Notamos que o senhor " + nome + " tem idade de um JOVEM.")
+            alert("jOVEM")
+        }
+        else if (idade >= 30 && idade < 60){
+            document.write("Notamos que o senhor " + nome + " tem idade de um ADULTO.")
+            alert("ADULTO")
+        }
+        else{
+            document.write("Notamos que o senhor " + nome + " tem idade de um IDOSO.")
+            alert("IDOSO")
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

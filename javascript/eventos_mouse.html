@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+      function acao(){
+        alert("Ação disparada!")
+      }
+
+    </script>
+</head>
+<body>
+    <!-- Essa Div será disparada ao clicar-->
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 120px;">
+        Em um clique
+    </div>
+    <br>
+    <!-- Essa Div será disparada somente com dois cliques-->
+    <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 120px;">
+        Dois cliques
+    </div>
+    <br>
+    <!-- Essa Div não sera disparada quando estiver pressionando na área com o clique-->
+    <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 120px;">
+        Ao pressionar
+    </div>
+    <br>
+    <!-- Essa Div será disparada assim que o cursor passar por cima da área-->
+    <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 120px;">
+        Ao passar o cursor em cima
+    </div>
+    <br>
+    <!-- Essa Div será disparada assim que o cursor sair por cima da área-->
+    <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 120px;">
+        Assim que tirar o cursor da área
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+
+            var objetos = ['cadeira', 'impressora', 'garfo']
+
+            //criando a função para adicionar
+
+            function add_objetos(){
+
+                //pegando o valor e salvando na variável
+
+                var result = document.getElementById('campo_saida').value
+
+                if (result === ''){
+                    alert('Informe um valor válido')
+                }else{
+                    //Após pego o valor, mantenho o input em branco
+                    document.getElementById('campo_saida').value = ''
+
+                    var pesquisa = objetos.indexOf(result)
+
+                    if (pesquisa === -1){
+                        objetos.unshift(result)
+                        console.log(objetos)
+                    }else{
+                        alert('Objeto já foi adicionado')
+                    }
+                }
+            }
+
+            //Função para ordenar os elementos da lista
+
+            function ordena_objetos(){
+                objetos.sort()
+                console.log(objetos)
+            }
+
+      </script>
+  </head>
+    <body>
+        <div class="container input-group mt-5">
+            <input id="campo_saida" class="form-control" type="text" placeholder="Inisra o objeto desejado">
+            <button onclick="add_objetos()" id="adicionar" class="btn btn-primary mr-2" type="button">Adicionar</button>
+            <button onclick="ordena_objetos()" id="ordenar" class="btn btn-primary" type="button">Ordenar</button>
+        </div>
+    </body>
+
+</html>

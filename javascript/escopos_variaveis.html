@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  <script>
+
+    //declarando uma variável global
+    var teste = "JavaScript"
+
+
+    //Caso eu queira chamar essa variável dentro de uma função ou if, ela será chamada
+    if (true){
+      document.write(teste)
+    }
+
+    //quebrando a linha
+    document.write("<br>")
+
+    //chamando essa variável global dentro de uma função
+    function x(){
+      document.write(teste)
+    }
+
+    x()
+
+    //==============================
+
+    //Ao declarar uma variável dentro de um IF, a variável passa a se tornar global
+    //declarando a variável
+    if (true){
+      var teste2 = "Oi, eu sou Goku"
+    }
+
+    //quebrando linha
+    document.write("<br>")
+
+    //chamando essa variável dentro de uma função
+    function y(){
+      document.write(teste2)
+    }
+
+    y()
+
+    //==============================
+
+    //Ao declarar uma variável dentro de uma função, essa variável não se torna global, sendo impossível chamá-la fora da função
+    //declarando a variáel na função
+    function z(){
+      var teste3 = "O próximo capítulo, será..."
+    }
+
+    //Tentando chamar esta variável dentro de um IF
+    if (true){
+      document.write(teste3)
+    }
+
+    //tentando chamar essa variável fora de qualquer bloco
+    document.write(teste3)
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>

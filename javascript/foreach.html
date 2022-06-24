@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+
+        var lista_pessoas = Array('Luciano', 'Vanusa', 'Tiago', 'Max')
+
+
+        document.write(lista_pessoas[2])
+
+        //atribuindo o FOREACH
+
+        //No FOREACH sempre terá como opção recuperar o valor, indice ou array. Nesta sequência
+        lista_pessoas.forEach(function(valor, indice, array){
+          console.log("Índice: " + indice + " | Valor: " + valor)
+
+          if (valor == 'Tiago'){
+            lista_pessoas[indice] = "Outro valor"
+          }
+        })
+
+        document.write(" <br> " + lista_pessoas)
+
+        //OU, PODEMOS FAZER DESSA OUTRA FORMA
+
+        document.write("<hr>")
+
+        var lista_familia = Array('Luciano', 'Vanusa', 'Tiago', 'Max')
+
+        var f = function(valor, indice, array){
+            document.write("<br>" + valor)
+        }
+
+        lista_familia.forEach(f)
+    </script>
+  </head>
+    <body>
+
+    </body>
+
+</html>

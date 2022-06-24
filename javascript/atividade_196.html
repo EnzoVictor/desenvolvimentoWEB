@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        function alternando_cor(){
+            document.getElementById('cor_base').style.background = 'yellow'
+        }
+
+        function aciona_campo(){
+            var dados = document.getElementById('cor_base').value
+
+            if (dados.length < 3){
+                document.getElementById('cor_base').style.background = 'red'
+            }else{
+                document.getElementById('cor_base').style.background = 'green'
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" id="cor_base" onblur="aciona_campo()" onfocus="alternando_cor()">
+
+</body>
+</html>

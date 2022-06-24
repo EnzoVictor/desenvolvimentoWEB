@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+    </script>
+</head>
+<body>
+    <!--Ação é acionada ao clicar no input -->
+    <input onfocus="console.log('Recebeu o foco')" type="text">
+    <br>
+    <br>
+    <!--Onblur funciona quando o elemento perde o foco-->
+    <input onblur="console.log('Perdeu o foco')" type="text">
+    <br>
+    <br>
+    <!--Onchange atua somente quando o elemento for modificado -->
+    <select onchange="console.log('Estado foi modificado')">
+        <option><--Selecione--></option>
+        <option>Estado 1</option>
+        <option>Estado 2</option>
+    </select>
+</body>
+</html>

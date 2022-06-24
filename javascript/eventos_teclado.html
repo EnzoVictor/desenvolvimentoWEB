@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+      function acao(){
+        alert("Ação disparada!")
+      }
+
+    </script>
+</head>
+<body>
+    <!--Ação é disparada ao inserir uma tecla -->
+    <input onkeyup="acao()" type="text">
+    <br>
+    <br>
+    <!--Ação é disparada ao inserir uma tecla, porém a tecla será mostrada após a ação for disparada -->
+    <input onkeydown="acao()" type="text">
+    <br>
+    <br>
+    <!--Diferente do onkeydown é que o onkeypress só será validade com teclas que representam um caracter -->
+    <input onkeypress="acao()" type="text">
+</body>
+</html>

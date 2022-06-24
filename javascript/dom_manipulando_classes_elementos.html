@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <style>
+
+        .estilo1{
+            background: #ff0000;
+            color: #fff;
+        }
+        .estilo2{
+            background: #ff0000;
+            color: #fff;
+            font-size: 25px;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+    <script>
+
+        function mudando_classe(){
+            document.getElementById('conteudo').className = 'estilo2'
+        }
+
+    </script>
+
+</head>
+<body>
+  <h2>Manipulando as classes</h2>
+  <div id="conteudo" class="estilo1">Manipulando o conteúdo</div>
+  <hr>
+  <button type="button" onclick="mudando_classe()">
+    Clique para alterar o conteúdo
+  </button>
+
+</body>
+</html>

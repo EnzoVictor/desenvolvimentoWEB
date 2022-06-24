@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        //Netflix
+
+        //throw new Error('Houve um problema, porém estamos trabalhando nisso agora!')
+
+        var filmes = []
+
+        filmes[1] = Array()
+        filmes[1]['Nome'] = 'Dragon Ball Z'
+        filmes[1]['Gênero'] = 'Anime'
+
+
+        function getFilme(){
+
+            //TRY irá tentar rodar o código
+            //CATCH irá pegar o erro e tratá-lo, fazendo com que o código rode por completo
+            //FINALLY sempre irá rodar, independente se der erro ou não
+            /*
+                THROW NEW ERROR pode implementar em qualquer lugar do código, porém se colocar dentro do CATCH
+                o código não irá parar. Neste comando podemos alterar a mensagem de erro e mostrar para o usuário.
+            */
+            try{
+                console.log(filmes[0]['Nome'])
+            } catch (e){
+                //Pegando o erro e enviando para a função GETERRO para mandar o erro no servidor/analista
+                getErro(e)
+                console.log('Tratando o erro e rodando o código por completo')
+                throw new Error('Houve um problema, porém estamos trabalhando nisso agora!')
+            } finally{
+                console.log('Sempre irá passar por aqui')
+            }
+
+            console.log('Programa rodou por completo')
+        }
+
+        function getErro(error){
+            console.log(error)
+        }
+
+        getFilme()
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

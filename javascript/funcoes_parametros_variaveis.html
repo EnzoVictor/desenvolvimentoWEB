@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+
+            //ARGUMENTS é um comando de todas as funções onde retorna os valores do parâmetro inserido
+
+            //Percorrendo os parâmetros de uma função e realizando a soma
+            function soma(){
+                var retorno = 0
+
+                //fazendo um FOR IN para percorrer os parâmetros
+                for (var x in arguments){
+                    retorno += arguments[x]
+                }
+                return retorno
+            }
+
+            console.log(soma(10, 2, 25, 'Teste'))
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

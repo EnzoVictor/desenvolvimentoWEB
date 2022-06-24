@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        var data = new Date()
+
+        document.write(data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear())
+
+        document.write("<hr>")
+        document.write("<br>")
+
+        document.write(data.toString())
+
+        document.write("<br>")
+
+        //alterando o dia da data
+
+        data.setDate(data.getDate() + 1 )
+        document.write(data.toString())
+        document.write("<br>")
+        data.setDate(data.getDate() -2 )
+        document.write(data.toString())
+
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<br>")
+
+        //alterando o mês da data
+
+        data.setMonth(data.getMonth() + 1)
+        document.write(data.toString())
+        document.write("<br>")
+        data.setMonth(data.getMonth() + 2)
+        document.write(data.toString())
+
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<br>")
+
+        //alterando o ano da data
+
+        data.setFullYear(data.getFullYear() + 1)
+        document.write(data.toString())
+        document.write("<br>")
+        data.setFullYear(data.getFullYear() - 5)
+        document.write(data.toString())
+    </script>
+</head>
+<body>
+
+</body>
+</html>
