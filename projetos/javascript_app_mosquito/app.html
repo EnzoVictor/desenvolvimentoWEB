@@ -5,11 +5,31 @@
         <title>Game Mosquito</title>
         <script src="js/javascript.js"></script>
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="icon" href="imagens/mosca.png">
     </head>
     <body onresize="alturaLargura()">
 
+        <div class="painel">
+
+            <div class="vidas">
+
+                <img id="v1" src="imagens/coracao_cheio.png">
+                <img id="v2" src="imagens/coracao_cheio.png">
+                <img id="v3" src="imagens/coracao_cheio.png">
+
+            </div>
+
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
+        </div>
+
         <script>
-            posicaoMosca()
+
+            document.getElementById('cronometro').innerHTML = tempo
+            var criaMosca = setInterval( function(){
+                posicaoMosca()
+            }, tempoMosca)
         </script>
     </body>
 </html>
