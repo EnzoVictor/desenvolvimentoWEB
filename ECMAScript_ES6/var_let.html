@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script>
+
+            //Exemplo de var
+
+            var carro = 'Polo'
+
+            function carros(){
+              if (carro == 'Polo'){
+                carro = 'Jetta'
+
+                console.log('Carro dentro do escopo de bloco dentro da função é: ' + carro)
+              }
+            }
+            carros()
+            console.log('Carro no escopo global é: ' + carro)
+
+
+            //Exemplo de Let
+
+            let serie = 'La casa de papel'
+
+            function series(){
+                if (serie == 'La casa de papel'){
+                    let serie = 'Vikings'
+
+                    console.log('Série dentro do escopo de bloco dentro da função é: ' + serie)
+                }
+            }
+
+            series()
+            console.log('Série no escopo global é: ' + serie)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

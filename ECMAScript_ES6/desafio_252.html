@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+      class Sofa {
+        constructor(tecido, cor, lugares, inclinacao){
+          this.tecido = tecido
+          this.cor = cor
+          this.lugares = lugares
+          this.inclinacao = inclinacao
+        }
+
+        alterarCor(corNova){
+          this.cor = corNova
+        }
+
+        sofaInclina(){
+          if (this.inclinacao === true){
+            console.log('Sofá inclina')
+          }else{
+            console.log('Sofá não inclina')
+          }
+        }
+
+      }
+
+      let sofa = new Sofa('Couro', 'Cinza', 4, true)
+      let sofa2 = new Sofa('Veludo', 'Azul escuro', 7, false)
+
+
+      sofa.alterarCor('Preto')
+
+      console.log(sofa)
+
+      sofa.sofaInclina()
+
+      sofa2.sofaInclina()
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

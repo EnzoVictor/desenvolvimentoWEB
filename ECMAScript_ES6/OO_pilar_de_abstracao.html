@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script>
+
+          class ContaBancaria {
+            //agencia
+            //contaBancaria
+            //saldo
+            //limite
+            constructor(){
+                this.agencia = 450058
+                this.contaBancaria = 45010020030
+                this.saldo = 100
+                this.limite = 1000
+            }
+
+            depositar(depositoConta){
+                this.saldo += depositoConta
+            }
+
+            sacar(saqueConta){
+                this.saldo -= saqueConta
+            }
+
+            saldo(){
+                return this.saldo
+            }
+          }
+
+          let x = new ContaBancaria()
+          let y = new ContaBancaria()
+
+          x.depositar(50)
+          console.log(x.saldo)
+          x.sacar(60)
+          console.log(x.saldo)
+
+          console.log(y.saldo)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

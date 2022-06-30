@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script>
+            //Maneira convencional
+            /*
+                var quadrado = function(x=2){
+                return x * x
+                }
+                document.write(quadrado(5))
+            */
+
+            //Arrow function
+            /*
+                let quadrado = (x) => {
+                    return x * x
+                }
+
+                document.write(quadrado(5))
+            */
+            //============
+            // OUUUU
+            /*
+                let quadrado = x => x * x //Return implícito
+
+                document.write(quadrado(2))
+            */
+
+            //Modo convencional
+            /*
+                let parImpar = function(number){
+                    if(number % 2 === 0){
+                        return 'Par'
+                    } else{
+                        return 'Ímpar'
+                    }
+                }
+
+                document.write(parImpar(5))
+            */
+
+            //Arrow function
+            /*
+                let parImpar = number => {
+                    if(number % 2 === 0){
+                            return 'Par'
+                    } else{
+                        return 'Ímpar'
+                    }
+                }
+
+                document.write(parImpar(2))
+            */
+
+            //OUUUUUUU
+
+            let parImpar = number => number === 0 ? 'Par' : 'Ímpar'
+            document.write(parImpar(9))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
