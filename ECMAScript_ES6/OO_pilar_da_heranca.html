@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+      class Animal{
+        constructor(){
+          this.idade = 'Aproximadamente 10 anos'
+        }
+        dormir(){
+          console.log('Dormir')
+        }
+
+      }
+
+      class Cachorro extends Animal{
+        constructor(){
+          this.cor = 'Preto'
+          this.tamanho = 20
+          this.orelha = 'Grandes e longas'
+        }
+        correr(){
+          console.log('Correr')
+        }
+
+        rosnar(){
+        console.log('Rosnar')
+        }
+      }
+
+      class Passaro extends Animal{
+        constructor(){
+          this.cor = 'Branco'
+          this.tamanho = 50
+          this.bico = 20
+        }
+        voar(){
+          console.log('Voar')
+        }
+
+      }
+
+      let cachorro = new Cachorro()
+      let passaro = new Passaro()
+
+
+
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>
