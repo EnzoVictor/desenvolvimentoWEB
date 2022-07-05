@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+      let nome = 'Enzo'
+      let idade = 21
+      let trabalho = 'Programador'
+      let sexo = 'Masculino'
+
+      let objeto = {
+        nome: nome,
+        idade: idade,
+        trabalho: trabalho,
+        sexo: sexo,
+        exibirResumo: function(){
+          console.log(`Resumo: ${this.nome}, ${this.idade} anos, ${this.trabalho} do sexo ${this.sexo}`)
+        }
+      }
+
+      objeto.exibirResumo()
+
+      //MANEIRA MELHORADA/SIMPLIFICADA
+
+      let objeto2 = {
+        nome,
+        idade,
+        trabalho,
+        sexo,
+        exibirResumo(){
+          console.log(`Resumo: ${this.nome}, ${this.idade} anos, ${this.trabalho} do sexo ${this.sexo}`)
+      }
+
+      objeto2.exibirResumo()
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>

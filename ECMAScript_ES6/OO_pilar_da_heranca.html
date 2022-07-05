@@ -8,45 +8,56 @@
 
       class Animal{
         constructor(){
-          this.idade = 'Aproximadamente 10 anos'
+          this.cor = 'Branco e Marrom'
+          this.tamanho = null
         }
         dormir(){
-          console.log('Dormir')
+          console.log('Dormindo')
         }
-
       }
 
       class Cachorro extends Animal{
         constructor(){
-          this.cor = 'Preto'
-          this.tamanho = 20
-          this.orelha = 'Grandes e longas'
+          super()
+          this.orelhas = 'Longas e Caídas'
         }
-        correr(){
-          console.log('Correr')
+        rosnar(){
+          console.log('Rosnando')
         }
 
-        rosnar(){
-        console.log('Rosnar')
-        }
       }
 
       class Passaro extends Animal{
         constructor(){
-          this.cor = 'Branco'
-          this.tamanho = 50
-          this.bico = 20
+          super()
+          this.bico = 5
         }
         voar(){
-          console.log('Voar')
+          console.log('Voando')
         }
 
       }
 
+      class Papagaio extends Passaro{
+        constructor(){
+          super()
+          this.sabeFalar = true
+        }
+        falar(){
+          console.log('Falando')
+        }
+      }
+
       let cachorro = new Cachorro()
       let passaro = new Passaro()
+      let papagaio = new Papagaio()
 
 
+      console.log(cachorro)
+      console.log(passaro)
+      cachorro.dormir()
+      passaro.voar()
+      papagaio.falar()
 
     </script>
   </head>

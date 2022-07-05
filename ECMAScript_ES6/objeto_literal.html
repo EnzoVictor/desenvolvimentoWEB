@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+      class Produto{
+        constructor(descricao, preco){
+          this.descricao = descricao
+          this.preco = preco
+        }
+        verDescricao(){
+          console.log(`O produto ${this.descricao} está custando R$${this.preco}`)
+        }
+      }
+
+      let produto = new Produto('Celular', 2350)
+
+      produto.verDescricao()
+
+      //NOTAÇÃO DE OBJETO LITERAL/ESTÁTICO
+
+      let produtoLiteral = { descricao: 'Tablet',
+                             preco: 1500,
+                             verDescricao: function(){
+                                console.log(`O produto ${this.descricao} está custando R$${this.preco}`)
+                             } }
+
+      produtoLiteral.verDescricao()
+
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>
