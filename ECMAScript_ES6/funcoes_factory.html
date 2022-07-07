@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+        let BicicletaFactory = function(cor, marcha, aro){
+            //Lógica
+            //Requisição http
+            //Resposta http
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar(){
+                    console.log('Método pedalar em execução')
+                }
+            }
+        }
+
+        let bicicleta = BicicletaFactory('Vermelha', 4, 20)
+        let bicicleta2 = BicicletaFactory('Preto', 8, 29)
+
+        console.log(bicicleta)
+        bicicleta.pedalar()
+
+        console.log(bicicleta2)
+        bicicleta2.pedalar()
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>

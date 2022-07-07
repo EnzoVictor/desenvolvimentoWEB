@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+        let frutas = ['Banana', 'Morango', 'Pera', 'Uva']
+
+        let [a, b, , c] = frutas //Pulando índice
+
+        console.log(a, b, c)
+
+        let time = ['São Paulo', 'Palmeiras', 'Santos', 'Ponte Preta']
+
+        let [z, d = 'Cruzeiro', x, y, u = 'Botafogo'] = time
+
+        console.log(z, d, x, y, u)
+
+        let carros = [['Audi', 'Toyota', 'BMW', 'Lamborghini'], ['Audi TT', 'Corola', 'X6', 'URUS']]
+
+        let [[, , , lamboMarca],[audi, , ,lambo]] = carros
+
+        console.log(lamboMarca, lambo)
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>

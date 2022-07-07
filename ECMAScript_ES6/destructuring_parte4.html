@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+        //Destructuring com operador rest
+
+        //Array
+
+        let arr = [10, 20, 30, 40]
+
+        let [a, ...resto] = arr
+
+        console.log(a)
+        console.log(resto)
+
+        //Objetos
+
+        let obj = {
+            ab: 10,
+            bc: 20,
+            cd: 30,
+            de: 40
+        }
+
+        let {ab, ...z} = obj
+
+        console.log(a)
+        console.log(z)
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+      //Operador Spread: Tem como finalidade pegar um conteúdo e espalhar dentro de outra estrutura
+
+      //Exemplos:
+
+      //string
+      let tituloCurso = 'Como utilizar o operador rest/spread'
+
+      console.log(tituloCurso)
+      console.log(...tituloCurso)
+      console.log([...tituloCurso])
+
+      //Arrays
+
+      let listaCurso1 = ['Node JS e MongoDB', 'ES6', 'TypeScript e Angular 4']
+      let listaCurso2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/LINUX']
+      let cursoCompleto = [...listaCurso1, 'Web completo', ...listaCurso2]
+
+      console.log(cursoCompleto)
+
+      //Objetos
+
+      let pessoa = {
+        nome: 'Tiago',
+        idade: 15
+      }
+      let clone = {
+        endereço: 'Rua ABC',
+        complemento: 'Casa', ...pessoa
+      }
+
+      console.log(clone)
+
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>

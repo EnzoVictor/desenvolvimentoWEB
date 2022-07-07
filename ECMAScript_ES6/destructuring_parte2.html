@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+
+        let produto = {
+          descricao: 'Notebook',
+          preco: 1850,
+          detalhes: {
+            fabricante: 'Del',
+            modelo: 'AX11'
+          }
+        }
+
+        //let {descricao, preco} = produto
+        //console.log(descricao, preco)
+
+        //let {descricao: d, preco: p} = produto
+        //console.log(d, p)
+
+        //let {descricao: d, preco: p = '1350', desconto = 'Sem desconto'} = produto
+        //console.log(d, p, desconto)
+
+        let {detalhes: {fabricante: f, modelo: m}} = produto
+        console.log(f, m)
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>
