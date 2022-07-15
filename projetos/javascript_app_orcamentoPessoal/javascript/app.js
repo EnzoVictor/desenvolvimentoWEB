@@ -56,6 +56,48 @@ class Bd{
 
         return despesas
     }
+
+    pesquisa(despesa){
+        let despesaFiltradas = Array()
+
+        despesaFiltradas = this.recuperarTodosRegistros()
+
+        console.log(despesa)
+
+        console.log(despesaFiltradas)
+
+        if(despesa.ano != ''){
+            console.log('Filtro chegou no ano')
+            despesaFiltradas = despesaFiltradas.filter(f => f.ano == despesa.ano)
+        }
+
+        if(despesa.mes != ''){
+            console.log('Filtro chegou no mes')
+            despesaFiltradas = despesaFiltradas.filter(f => f.mes == despesa.mes)
+        }
+
+        if(despesa.dia != ''){
+            console.log('Filtro chegou no dia')
+            despesaFiltradas = despesaFiltradas.filter(f => f.dia == despesa.dia)
+        }
+
+        if(despesa.tipo != ''){
+            console.log('Filtro chegou no tipo')
+            despesaFiltradas = despesaFiltradas.filter(f => f.tipo == despesa.tipo)
+        }
+
+        if(despesa.descricao != ''){
+            console.log('Filtro chegou no descricao')
+            despesaFiltradas = despesaFiltradas.filter(f => f.descricao == despesa.descricao)
+        }
+
+        if(despesa.valor != ''){
+            console.log('Filtro chegou no valor')
+            despesaFiltradas = despesaFiltradas.filter(f => f.valor == despesa.valor)
+        }
+
+        return  despesaFiltradas
+    }
 }
 
 let bd = new Bd()
@@ -94,8 +136,8 @@ function cadastroDespesa(){
         mes.value = ''
         dia.value = ''
         tipo.value = ''
-        decricao.value = ''
-        valor.value = ''
+        decricao.value = ""
+        valor.value = ""
 
     }else{
         console.log('Validação incompleta ')
@@ -113,13 +155,13 @@ function cadastroDespesa(){
 
 }
 
-function listaDespesas(){
-    let despesas = Array()
-
-    despesas = bd.recuperarTodosRegistros()
-
+function listaDespesas(despesas = Array(), filter = false){
+    if(despesas.length == 0 && filter == false){
+        despesas = bd.recuperarTodosRegistros()
+    }
     //Selecionando o tbody da página consulta
     let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''
 
     /*
     <tr>
@@ -138,5 +180,30 @@ function listaDespesas(){
         linha.insertCell(1).innerHTML = d.tipo
         linha.insertCell(2).innerHTML = d.descricao
         linha.insertCell(3).innerHTML = d.valor
+
+        //Criando o botão que irá remover a determinada despesa
+        let btn = document.createElement('button')
+        btn.className = 'btn btn-danger'
+        btn.innerHTML = '<i class="fas fa-times"></i>'
+        btn.onclick = function(){
+            //Remover o elemento selecionado
+            alert('removendo')
+        }
+        linha.insertCell(4).append(btn)
     })
+}
+
+function pesquisaDespesa(){
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
+
+    let despesas = bd.pesquisa(despesa)
+
+    this.listaDespesas(despesas, true)
 }

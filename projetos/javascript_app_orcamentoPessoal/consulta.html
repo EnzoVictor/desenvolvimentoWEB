@@ -61,15 +61,14 @@
             <div class="row mb-5">
 
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control" id="ano">
                         <option value="">Ano</option>
                         <option value="2022">2022</option>
                     </select>
                 </div>
 
                 <div class="col-md-2">
-                    <select class="form-control">
-                        <option value="mes">Mês</option>
+                    <select class="form-control" id="mes">
                         <option value="">Mês</option>
                         <option value="Janeiro">Janeiro</option>
                         <option value="Fevereiro">Fevereiro</option>
@@ -91,7 +90,7 @@
                 </div>
 
                 <div class="col-md-6 mb-2">
-                    <select class="form-control">
+                    <select class="form-control" id="tipo">
                         <option value="">Tipo</option>
                         <option value="Alimentação">Alimentação</option>
                         <option value="Saúde">Saúde</option>
@@ -112,7 +111,7 @@
                 </div>
 
                 <div class="col-md-2 d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary" onclick="pesquisaDespesa()">
                         <span class="fas fa-search"></span>
                     </button>
                 </div>

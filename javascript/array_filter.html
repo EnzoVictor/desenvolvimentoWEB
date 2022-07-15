@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        let funcionarios = [ {nome: 'Luciano', cargo: 'Gerente adm', salario: 8500, status: 'ativo'},
+                             {nome: 'Vanusa', cargo: 'Gerente departamento pessoal', salario: 6200, status: 'ativo'},
+                             {nome: 'Andre', cargo: 'Auxliar técnico', salario: 2230, status: 'ativo'},
+                             {nome: 'miguel', cargo: 'Help Desk', salario: 1300, status: 'ativo'},
+                             {nome: 'luciana', cargo: 'Jovem Aprendiz', salario: 600, status: 'inativo'} ]
+
+        let pes = funcionarios.filter(function(f){ return f.salario < 3000 }).filter(function(f) { return f.status == 'inativo'})
+        console.log(pes)
+
+        // ou pode utilizar desta outra forma
+        let arrow = funcionarios.filter(f => f.salario < 3000).filter(f => f.status == 'ativo')
+
+        console.log(arrow)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
