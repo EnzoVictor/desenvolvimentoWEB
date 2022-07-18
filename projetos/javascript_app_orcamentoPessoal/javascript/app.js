@@ -51,6 +51,7 @@ class Bd{
             if(despesa == null){
                 continue
             }
+            despesa.id = i
             despesas.push(despesa)
         }
 
@@ -98,6 +99,10 @@ class Bd{
 
         return  despesaFiltradas
     }
+
+    remover_id(id){
+        localStorage.removeItem(id)
+    }
 }
 
 let bd = new Bd()
@@ -120,7 +125,7 @@ function cadastroDespesa(){
     )
     if (despesa.validarDados()){
         console.log('Validação correta')
-         //bd.gravarStorage(despesa)
+         bd.gravarStorage(despesa)
 
         document.getElementById('modal_div_titulo').className = 'modal-header text-success'
         document.getElementById('modal_titulo').innerHTML = 'Despesa inserida'
@@ -185,11 +190,30 @@ function listaDespesas(despesas = Array(), filter = false){
         let btn = document.createElement('button')
         btn.className = 'btn btn-danger'
         btn.innerHTML = '<i class="fas fa-times"></i>'
+        btn.id = `id_despesa_${d.id}`
         btn.onclick = function(){
             //Remover o elemento selecionado
-            alert('removendo')
+
+            let id = this.id.replace('id_despesa_', '')
+
+            //alert(id)
+
+            document.getElementById('modal_div_titulo').className = 'modal-header text-success'
+            document.getElementById('modal_titulo').innerHTML = 'Removido com sucesso'
+            document.getElementById('modal_conteudo').innerText = 'Despesa removida com sucesso!'
+            document.getElementById('modal_conteudo').className = 'modal-body'
+            document.getElementById('modal_btn').className = 'btn btn-outline-success'
+            document.getElementById('modal_btn').innerHTML = 'Voltar'
+
+            //dialog de erro
+            $('#modalRegistroDespesa').modal('show')
+
+            bd.remover_id(id)
+
         }
         linha.insertCell(4).append(btn)
+
+        console.log(d)
     })
 }
 
