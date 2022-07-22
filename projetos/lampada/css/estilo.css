@@ -1,0 +1,23 @@
+/*
+body {
+    background-image: url('../imagens/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+*/
+
+.lampada{
+    margin-top: 30%;
+}
+
+.acender{
+    margin-left: 100%;
+}
+
+.acender{
+    margin-right: 100%;
+}
+
+.button{
+    width: 150px;
+}
