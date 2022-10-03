@@ -1,10 +1,9 @@
-/*
 body {
     background-image: url('../imagens/fundo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-*/
+
 
 .lampada{
     margin-top: 30%;
@@ -16,8 +15,4 @@ body {
 
 .apagar{
     margin-right: 100%;
-}
-
-.button{
-    width: 200px;
 }

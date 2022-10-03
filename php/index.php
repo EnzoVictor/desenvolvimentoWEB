@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <tittle>Curso PHP</tittle>
+    <title>Curso PHP</title>
   </head>
   <body>
 
@@ -14,10 +14,6 @@
     <br>
 
     <?=  'utilizando a tag de impressão' ?>
-
-    <br>
-
-    <? 'Utilizando tag curta' ?>
 
   </body>
 </html>
