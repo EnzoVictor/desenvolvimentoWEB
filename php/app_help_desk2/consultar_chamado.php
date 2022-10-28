@@ -1,6 +1,8 @@
-<?php require_once("validador_acesso.php");
+<?php
+
+    require_once("validador_acesso.php");
     include("conecta.php");
-    session_start();
+
 
     $admin = true;
 

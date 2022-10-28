@@ -9,7 +9,7 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $seleciona = mysqli_query($conexao, "select * from Dados order by id desc");
+    $seleciona = mysqli_query($conexao, "select * from dados order by id desc");
     while($campo = mysqli_fetch_array($seleciona)){
         if($email == $campo['email'] && $senha == $campo['senha']){
             echo 'email já cadastrado no banco';

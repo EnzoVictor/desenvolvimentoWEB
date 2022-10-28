@@ -27,7 +27,7 @@
     if($nome != null and $titulo != null and $descricao != null and $categoria != null){
         $data = date('d/m/Y H:i');
         $status = 'pendente';
-        mysqli_query($conexao, "insert into Dados (nome, email, senha, titulo, categoria, descricao, data, status, nomeResp, respAdmin, respUser, dataResp) values ('$nome', '$email', '$senha', '$titulo', '$categoria', '$descricao', '$data', '$status' , '$nomeResp', '$respAdmin', '$respUser', '$dataResp')");
+        mysqli_query($conexao, "insert into dados (nome, email, senha, titulo, categoria, descricao, data, status, nomeResp, respAdmin, respUser, dataResp) values ('$nome', '$email', '$senha', '$titulo', '$categoria', '$descricao', '$data', '$status' , '$nomeResp', '$respAdmin', '$respUser', '$dataResp')");
         header("location: abrir_chamado.php?chamado=enviado");
     } else{
         header("location: abrir_chamado.php?chamado=cancelado");

@@ -14,7 +14,7 @@
     print_r($_SESSION);
     echo '</pre>';
 
-    $seleciona = mysqli_query($conexao, "select * from Dados order by id desc");
+    $seleciona = mysqli_query($conexao, "select * from dados order by id desc");
     while($campo = mysqli_fetch_array($seleciona)){
         if($_SESSION['email'] == $campo['email'] AND $_SESSION['senha'] == $campo['senha']){
             header("location: index.php?login=error3");
